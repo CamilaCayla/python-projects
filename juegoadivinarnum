@@ -1,0 +1,13 @@
+import random
+
+numero_secreto=random.randint(1,10)
+print(numero_secreto)
+cant_intentos=0
+while cant_intentos < 5:
+    intento= int(input ("Adivina un numero del 1 al 10:"))
+    if intento == numero_secreto:
+        print("Correcto, adivinaste el numero")
+        break
+    else: print("incorrecto, intenta de nuevo")
+    cant_intentos+= 1
+    
